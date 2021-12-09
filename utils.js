@@ -1,6 +1,3 @@
-const ss = SpreadsheetApp.getActiveSpreadsheet();
-const ui = SpreadsheetApp.getUi();
-
 const onOpen = () => {
   ui.createMenu("Data Transformer")
     .addItem("Transform Data", "transformData")
