@@ -12,18 +12,18 @@ This was originally built so that I could write rules to easily relabel my credi
 
 # Set up
 
-1. Make a copy of [this sheet](https://docs.google.com/spreadsheets/d/1exUF-Sya992lcHp98JoRRGb7Lxc_B4xLyprpzyJWzNE/edit#gid=1863674605)
+1. Make a copy of [this sheet](https://docs.google.com/spreadsheets/d/1exUF-Sya992lcHp98JoRRGb7Lxc_B4xLyprpzyJWzNE).
    ![Menu](/readmeImages/menu.png "Menu")
-2. Open the "Data Transformer" menu (should be to the left of "Last edit was made x minutes ago"). Click "Set up"
+2. Open the "Data Transformer" menu (should be to the left of "Last edit was made x minutes ago"). Click "Set up".
 3. Accept the permissions. It will tell you this code is unsafe. You'll need to accept it anyways (you can indenpendently audit this code to make sure its safe).
    ![Menu](/readmeImages/menu.png "Menu")
-4. That's it for set up! See usage steps nelow.
+4. That's it for set up! See usage steps below.
 
 # Usage
 
-1. Paste your dataset into the "Data" tab. Headers are mandatory and must be in row 1
+1. Paste your dataset into the "Data" tab. Headers are mandatory and must be in row 1.
 2. Write your rules in the "Rules" tab. The algorithm will give rules at the top of the list lower priority than rules at the bottom.
-3. Open the "Data Transformer" menu (should be to the left of "Last edit was made x minutes ago"). Click "Transform Data"
+3. Open the "Data Transformer" menu (should be to the left of "Last edit was made x minutes ago"). Click "Transform Data".
 
 # Limitations
 

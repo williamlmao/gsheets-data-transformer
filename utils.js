@@ -3,8 +3,8 @@ const ui = SpreadsheetApp.getUi();
 
 const onOpen = () => {
   ui.createMenu("Data Transformer")
-    .addItem("Transform Data", "GoogleSheetsDataTransformer.transformData")
-    .addItem("Set up", "GoogleSheetsDataTransformer.setUp")
+    .addItem("Transform Data", "transformData")
+    .addItem("Set up", "setUp")
     .addToUi();
 };
 

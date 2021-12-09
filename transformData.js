@@ -29,18 +29,12 @@ const buildRule = (rule) => {
   const column2 = rule["Column 2\n(Optional)"];
   const operator2 = rule["Operator 2\n(Optional)"];
   const value2 = rule["Value 2\n(Optional)"];
-  const column3 = rule["Column 3\n(Optional)"];
-  const operator3 = rule["Operator 3\n(Optional)"];
-  const value3 = rule["Value 3\n(Optional)"];
   const andOr = rule["AND/OR"];
   const transformColumn1 = rule["Transform Column 1"];
   const transformValue1 = rule["New Value 1"];
   const transformColumn2 = rule["Transform Column 2\n(Optional)"];
   const transformValue2 = rule["New Value 2\n(Optional)"];
-  const transformColumn3 = rule["Transform Column 3\n(Optional)"];
-  const transformValue3 = rule["New Value 3\n(Optional)"];
 
-  // Rule function also transforms the row if the rule is true
   const ruleFunction = (row) => {
     if (!operator1) {
       // ui alert if no operator is selected
@@ -54,19 +48,10 @@ const buildRule = (rule) => {
     const test = operators[operator1](row[column1], value1);
     if (operator2) {
       const test2 = operators[operator2](row[column2], value2);
-      if (operator3) {
-        const test3 = operators[operator3](row[column3], value3);
-        if (andOr === "AND") {
-          return test && test2 && test3;
-        } else {
-          return test || test2 || test3;
-        }
+      if (andOr === "AND") {
+        return test && test2;
       } else {
-        if (andOr === "AND") {
-          return test && test2;
-        } else {
-          return test || test2;
-        }
+        return test || test2;
       }
     } else {
       return test;
@@ -137,5 +122,5 @@ const transformData = () => {
 
   transformedData.unshift(originalDataHeaders);
 
-  writeDataToBottomOfTab("Transformed Data", transformedData);
+  writeDataToBottomOfTab("Transformed Data", transformedData, true);
 };
