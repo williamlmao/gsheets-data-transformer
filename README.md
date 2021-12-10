@@ -29,3 +29,4 @@ This was originally built so that I could write rules to easily relabel my credi
 
 - There are only 3 fields you can use to determine each rule. Support for more fields is possible, but 3 seemed like enough.
 - You cannot mix AND and OR logic in a single rule. You would not be able to write a rule like "Name equals Bill AND (Age < 0 OR Age >30)". I'd like to update this tool to support this, but the main issue I was running into when thinking it through was how the entry might look in the Rules tab. Please let me know if you have any suggestions here!
+- You cannot perform any work (formulas or functions) within the "New Value" columns other than using a column reference. The best workaround here is to add a note column and use this tool to add some metadata. You can then use that to filter down your dataset and use a sheet function to update the value.
