@@ -17,7 +17,7 @@ This was originally built so that I could write rules to easily relabel my credi
 2. Open the "Data Transformer" menu (should be to the left of "Last edit was made x minutes ago"). Click "Set up".
 3. Accept the permissions. It will tell you this code is unsafe. You'll need to accept it anyways (you can indenpendently audit this code to make sure its safe).
    ![Menu](/readmeImages/menu.png "Menu")
-4. There's some dummy data in there for you to mess around with. Edit the rules and then give the usage steps below a try.
+4. There's some dummy data from the plaid API in there for you to mess around with. Edit the rules and then give the usage steps below a try.
 
 # Usage
 

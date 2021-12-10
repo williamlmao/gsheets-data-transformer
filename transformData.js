@@ -45,7 +45,9 @@ const buildRule = (rule) => {
     if (!operator1) {
       // ui alert if no operator is selected
       if (operator1 === "") {
-        ui.alert("Please select an operator for column 1");
+        ui.alert(
+          "You have a row with no operator selected. Please select an operator in column D"
+        );
       } else {
         ui.alert(`${operator1} is not a valid operator`);
       }
