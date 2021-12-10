@@ -1,6 +1,8 @@
 # Overview
 
-Google Sheets Data Transformer is apps script allows you to build a set of rules you can use to clean, relabel, recategorize, and/or modify your data.
+![Screenshot of rules](/readmeImages/demo1.png "Demo")
+
+Google Sheets Data Transformer allows you to easily create a set of rules you can use to transform your data.
 
 A few use cases:
 
